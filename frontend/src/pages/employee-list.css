@@ -1,0 +1,154 @@
+/* employee-list.css */
+
+.container {
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1, h2 {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  h1 {
+    background-color: #ff5722;
+  }
+  
+  h2 {
+    background-color: #4caf50;
+  }
+  
+  .search-input {
+   
+    padding: 10px;
+    font-size: 16px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-container {
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #24884c;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Edit Button */
+  button.edit {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #45a049;
+  }
+  
+  /* Delete Button */
+  button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.delete:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .search-input {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+    }
+  
+    td {
+      padding: 10px;
+      text-align: left;
+      border: none;
+      display: block;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-size: 12px;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+  

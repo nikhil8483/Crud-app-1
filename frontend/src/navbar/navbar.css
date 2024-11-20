@@ -1,0 +1,81 @@
+/* General Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Link hover and active states */
+.navbar-links li a:hover {
+  background-color: #4caf50; /* Green background on hover */
+}
+
+.navbar-links li a:active {
+  background-color: #45a049; /* Darker green when clicked */
+}
+
+/* User info and logout on the right */
+.navbar-user-info {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-user-info li {
+  color: white;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.navbar-user-info li:last-child {
+  font-weight: normal;
+}
+
+.navbar-user-info li a {
+  text-decoration: none;
+  color: #ff5733; /* Logout color */
+}
+
+.navbar-user-info li a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+  .navbar-container {
+    padding: 10px 40px;
+  }
+}
+
+/* Add padding to body to prevent content from hiding behind the fixed navbar */
+body {
+  padding-top: 60px; /* Adjust this value based on navbar height */
+}

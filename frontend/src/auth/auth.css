@@ -1,0 +1,61 @@
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+label{
+  font-size: 15px;
+}
+html,
+body{
+height: 100%;
+width: 100%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+ padding: 25px 30px;
+ border-radius: 10px;
+ width: 100%;
+ max-width: 400px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container>h1{
+  margin-bottom: 20px;
+}
+.container>form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+.container input{
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+button{
+  background-color: blueviolet;
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
