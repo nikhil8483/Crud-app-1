@@ -62,7 +62,7 @@ const EmployeeEditForm = () => {
     };
 
     try {
-      const response = await fetch(`https://crud-app-1-api.vercel.app/?vercelToolbarCode=QcHcmEBps1qOiNS/products/updateEmployee/${state.employeeId}`, {
+      const response = await fetch(`https://crud-app-1-api.vercel.app/products/updateEmployee/${state.employeeId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataToSend),
