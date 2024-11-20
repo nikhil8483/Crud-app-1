@@ -13,7 +13,7 @@ const EmployeeList = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await fetch('https://crud-app-1-api.vercel.app/?vercelToolbarCode=QcHcmEBps1qOiNS/products/employees', {
+        const response = await fetch('https://crud-app-1-api.vercel.app/products/employees', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
