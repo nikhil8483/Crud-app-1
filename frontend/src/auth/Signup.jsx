@@ -30,7 +30,7 @@ const Signup = () => {
     }
 
     try {
-      const url_signup="https://crud-app-1-api.vercel.app/?vercelToolbarCode=QcHcmEBps1qOiNS/auth/signup";
+      const url_signup="https://crud-app-1-api.vercel.app/auth/signup";
       const response = await fetch(url_signup, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
