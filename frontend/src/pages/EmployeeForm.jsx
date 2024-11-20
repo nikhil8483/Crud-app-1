@@ -70,7 +70,7 @@ const EmployeeForm = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/products/products', {
+      const response = await fetch('https://crud-app-1-api.vercel.app/?vercelToolbarCode=QcHcmEBps1qOiNS/products/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
