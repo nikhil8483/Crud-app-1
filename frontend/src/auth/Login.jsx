@@ -29,7 +29,7 @@ const Login = () => {
     }
 
     try {
-      const url_login="http://localhost:3000/auth/login";
+      const url_login="https://crud-app-1-api.vercel.app/auth/login";
       const response = await fetch(url_login, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
